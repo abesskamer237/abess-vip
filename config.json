@@ -1,0 +1,38 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": "env:PORT",
+      "protocol": "vless",
+
+      "settings": {
+        "clients": [
+          {
+            "id": "ab355237-0237-4237-8237-ab3552370237"
+          }
+        ],
+        "decryption": "none"
+      },
+
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+
+        "wsSettings": {
+          "path": "/@abess237",
+          "heartbeatPeriod": 20
+        }
+      }
+    }
+  ],
+
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
